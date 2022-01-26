@@ -8,7 +8,7 @@ public class LabProgram {
         if (var.indexOf("BFF") > 0) {
             System.out.println("BFF: best friend forever");
         }
-        if (var.indexOf("IDK") > 0) {
+        if (var.indexOf("IDK") >= 0) {
             System.out.println("IDK: I don't know");
         }
         if (var.indexOf("JK") > 0) {
