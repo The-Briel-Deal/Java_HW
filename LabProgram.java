@@ -1,25 +1,22 @@
 import java.util.Scanner;
 
 public class LabProgram {
-    public static int largestAbsoluteValue(int[] userValues) {
-        int max = 0;
-        for (int var : userValues) {
-            if (max < Math.abs(var)) {
-                max = Math.abs(var);
-            }
-        }
-        return max;
+    public static double productOfFour(int a, int b, int c, int d) {
+        double ad = a;
+        return (ad * b * c * d);
+    }
+
+    public static double averageOfFour(int a, int b, int c, int d) {
+        return (a + b + c + d) / 4.0;
     }
 
     public static void main(String[] args) {
 
         Scanner scnr = new Scanner(System.in);
-        int toCome = scnr.nextInt();
-        int[] nums = new int[toCome];
-        for (int i = 0; i < toCome; i++) {
-            nums[i] = scnr.nextInt();
-        }
-        System.out.println(largestAbsoluteValue(nums));
-
+        int a = scnr.nextInt();
+        int b = scnr.nextInt();
+        int c = scnr.nextInt();
+        int d = scnr.nextInt();
+        System.out.format("%.3f %.3f", productOfFour(a, b, c, d), averageOfFour(a, b, c, d));
     }
 }
